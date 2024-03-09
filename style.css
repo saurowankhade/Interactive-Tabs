@@ -48,9 +48,6 @@ ul li{
     font-size: 25px;
     list-style: none;
     text-decoration: none;
-}
-
-ul li i{
     margin-right: 10px;
 }
 
@@ -75,7 +72,15 @@ ul li:hover{
     color: rgba(0, 0, 0, 0.732);
     line-height: 1.5rem;
     word-spacing: 0.2rem;
-    max-lines: 7;
+    /* max-lines: 7; */
+
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 7; /* number of lines to show */
+           line-clamp: 7; 
+   -webkit-box-orient: vertical;
+
+
 }
 .btn{
     margin-top: 30px;
@@ -123,3 +128,99 @@ ul li:hover{
     }
 }
 
+
+
+@media (max-width : 750px) {
+    ul li{
+        font-size: 18px;
+    }
+    .headingLine{
+        font-size: 18px;
+    }
+    .para{
+        font-size: 15px;   
+    }
+    .btn{
+        font-size: 14px;
+    }
+
+    .data-img img{
+        width : 300px ;
+        height : 300px ;
+    }
+
+}
+
+
+
+@media (max-width : 650px) {
+    ul li{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .headingLine{
+        font-size: 18px;
+    }
+    .para{
+        font-size: 15px;   
+    }
+    .btn{
+        font-size: 14px;
+    }
+
+    .data-img img{
+        width : 200px ;
+        height : 200px ;
+    }
+
+    .contents{
+        text-align: start;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data-text{
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width : 480px) {
+    ul li{
+        padding: 3px;
+    }
+
+    .data-img {
+        display: none;
+    }
+}
+
+
+
+@media (max-width : 400px) {
+    ul li{
+        padding: 0px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .headingLine{
+        font-size: 15px;
+    }
+    .para{
+        font-size: 14px;   
+    }
+    .btn{
+        font-size: 13px;
+    }
+
+
+
+    .data-img {
+        display: none;
+    }
+
+
+}
