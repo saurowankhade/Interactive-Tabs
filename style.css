@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root{
+    --bac-color : #dd5b23e4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nunito", sans-serif;font-optical-sizing: auto;
+    height: 100svh;
+}
+
+.custom-shape-divider-bottom-1709968014 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709968014 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 206px;
+}
+
+.custom-shape-divider-bottom-1709968014 .shape-fill {
+    fill: #dd5b23e4;
+}
+
+
+.main{
+    position: relative; 
+    height: 100svh;
+}
+
+ul{
+    margin: 30px;
+}
+ul li{
+    display: inline;
+    padding: 20px;
+    font-size: 25px;
+    list-style: none;
+    text-decoration: none;
+}
+
+ul li i{
+    margin-right: 10px;
+}
+
+ul li:hover{
+    transition: all 0.4s linear;
+    color: #dd5b23e4;
+    cursor: pointer;
+    text-decoration: overline;
+}
+
+.contents{
+    display: flex;
+    margin: 60px;
+}
+
+.headingLine{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.858);
+}
+.para{
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.732);
+    line-height: 1.5rem;
+    word-spacing: 0.2rem;
+    max-lines: 7;
+}
+.btn{
+    margin-top: 30px;
+    font-size: 16px;
+    background-color: var(--bac-color);
+    color: rgba(255, 255, 255, 0.883);
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+.btn:hover{
+    transition: all 0.1s linear;
+    color: white;
+    cursor: pointer;
+    background-color: #dd5b23fb;
+}
+.data-text{
+    width: 50%;
+}
+
+.data-img img{
+    width : 350px ;
+    height : 350px ;
+    object-fit: fill;
+}
+
+.tabClick{
+    color: #dd5b23e4;
+    cursor: pointer;
+    text-decoration: overline;
+}
+
+
+.opacity{
+    /* transition: all 0.5s linear; */
+    animation: opaci 1s linear 1;
+}
+
+@keyframes opaci {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
